@@ -120,3 +120,42 @@ root.render(
   </React.StrictMode>
 )
 */
+
+// 3-3-2 複数のchildrenを引き渡す場合
+/*
+以下の2つの方法がある
+・そもそもPropsを使用し、属性値として渡す
+・childrenからkey属性を使用して、個別に取得する
+
+例えば以下のように表す
+// Propsを使用し、属性値として渡す場合
+TitledPanel.tsxにて
+export default function TitledPanel({title, children}) {
+  return (
+    <div style={{
+      margin: 50,
+      padding: 20,
+      border: '1px solid #000',
+      width: 'fit-content',
+      boxShadow: '10px 5px 5px #999',
+      backgroundColor: '#fff'
+    }}>
+      {title}
+      <hr />
+      {body}
+    </div>
+  )
+}
+
+index.tsxにて
+import TitledPanel from './TitledPanel'
+中略
+root.render(<TitledPanel
+  title={
+    <h1>title</h1>
+  }
+  body={
+    <p>body</p>
+  } />
+)
+*/
