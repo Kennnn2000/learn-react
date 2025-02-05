@@ -45,21 +45,21 @@ Create React Appを構成するwebpack/Babelの設定をカスタマイズする
 returnでいったん文の区切りとみなされ、以降のJSX式が別の文として扱われるため
 以下は括弧を付けた例
 return (
-    <div>
-        <p>JSX式1</p>
-    </div>
+  <div>
+      <p>JSX式1</p>
+  </div>
 );
 
 以下のように括弧を付けなくてもエラーにはならなくすることはできるがバグになる可能性があるので非推奨
 return <div>
-    <p>JSX式1</p>
+  <p>JSX式1</p>
 </div>;
 
 また、以下のように括弧を付けないとreturn以降のJSX式が無視される
 return
-    <div>
-        <p>JSX式1</p>
-    </div>;
+  <div>
+    <p>JSX式1</p>
+  </div>;
 */
 
 
