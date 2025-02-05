@@ -76,6 +76,7 @@ export default function SelectStyle({mode}) {
 }
 
 // classnamesの使用例3 配列を使用することもできる
+// 下記の例だとbox panel lightのような属性値が生成される
 export default function SelectStyle({mode}) {
   return (
     <div className={classNames('box', ['panel',{light: mode === 'light', dark: mode === 'dark'}])}>
