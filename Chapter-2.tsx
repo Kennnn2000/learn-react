@@ -93,4 +93,7 @@ JSXのルールは以下の通り
 
 ・styleの数値の単位はpxがデフォルト
   ただし、pxで補完される対象は限定されていて、animationLterattionCountなどの数値はpxが補完されない
+  以下を参照
+  https://ja.react.dev/reference/react-dom/components/common#applying-css-styles
+  https://github.com/facebook/react/blob/81d4ee9ca5c405dce62f64e61506b8e155f38d8d/packages/react-dom-bindings/src/shared/CSSProperty.js#L8-L57
 */
