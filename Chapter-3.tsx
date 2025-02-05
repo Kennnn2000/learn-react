@@ -85,3 +85,38 @@ export default function SelectStyle({mode}) {
   )
 }
 */
+
+
+// 3-3-1 props.children
+/*
+propsでは属性値などのほかに、親要素配下の今t年つをprops.childrenとして取得することができる
+例えば以下のように表す
+
+StyledPanel.tsxにて
+export default function StyledPanel({children}) {
+  return (
+    <div style={{
+      margin: 50,
+      padding: 20,
+      border: '1px solid #000',
+      width: 'fit-content'
+      boxShadow: '10px 5px 5px #999',
+      backgroundColor: '#fff'
+    }}>
+      {children}
+    </div>
+  )
+}
+
+index.tsxにて
+import StyledPanel from './StyledPanel'
+const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
+root.render(
+  <React.StrictMode>
+    <StyledPanel>
+      <h1>children1</h1> //これらの要素がStyledPanelのchildrenとして取得され、styleを適用されたものが画面に表示される
+      <p>children2</p>
+    </StyledPanel>
+  </React.StrictMode>
+)
+*/
