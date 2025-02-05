@@ -26,4 +26,16 @@ propsのデータ型は、クォートで囲まれたものはすべて文字列
 <MyHello name={[sato, suzuki, yamada]} /> //Hello, sato,suzuki,yamada!: 配列型
 <MyHello name={{name: 'sato', age: 20}} /> //Hello, [object Object]!: オブジェクト型
 <MyHello name={()=>'Hello'} /> //Hello, Hello!: 関数
+
+propsの分割代入として以下も可能
+MyHello.tsxにて
+export default function MyHello({name}) { //props.nameをnameに変更
+  return <div>Hello, {name}!</div>
+}
+
+また、デフォルト値を設定することも可能
+MyHello.tsxにて
+export default function MyHello({name = 'React'}) { //nameのデフォルト値を'React'に設定
+  return <div>Hello, {name}!</div>
+}
 */
