@@ -65,4 +65,13 @@ export default function SelectStyle({mode}) {
     </div>
   )
 }
+
+// classnamesの使用例2 文字列とオブジェクトを組み合わせる
+export default function SelectStyle({mode}) {
+  return (
+    <div className={classNames('box', {light: mode === 'light', dark: mode === 'dark'})}>
+      <p>class names</p>
+    </div>
+  )
+}
 */
