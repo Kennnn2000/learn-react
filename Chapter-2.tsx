@@ -101,3 +101,30 @@ JSXのルールは以下の通り
   https://ja.react.dev/reference/react-dom/components/common#applying-css-styles
   https://github.com/facebook/react/blob/81d4ee9ca5c405dce62f64e61506b8e155f38d8d/packages/react-dom-bindings/src/shared/CSSProperty.js#L8-L57
 */
+
+
+// 2-3-5 JSXの実体、createElement関数
+/*
+JSX式は実行される際にJavaScriptのReact.createElement関数に変換される
+例えば以下は等価である
+
+JSX式
+const text ='Hello, JSX';
+root.render(
+  <div className="main">
+    <p>{text}</p>
+    <img src="logo.png" alt="ロゴ" />
+  </div>
+)
+
+React.createElement関数
+const text = 'Hello, JSX';
+root.render(
+  React.createElement(
+    'div',
+    { className: 'main' },
+    React.createElement('p', null, text), // nullの部分は属性を指定する場合に書き込む
+    React.createElement('img', { src: 'logo.png', alt: 'ロゴ' })
+  )
+)
+*/
