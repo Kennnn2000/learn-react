@@ -90,6 +90,7 @@ export default function SelectStyle({mode}) {
 // 3-3-1 props.children
 /*
 propsでは属性値などのほかに、親要素配下の今t年つをprops.childrenとして取得することができる
+childrenのスコープはあくまで呼び出し元の範囲のみであることに注意
 例えば以下のように表す
 
 StyledPanel.tsxにて
