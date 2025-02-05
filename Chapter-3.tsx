@@ -158,4 +158,34 @@ root.render(<TitledPanel
     <p>body</p>
   } />
 )
+
+// childrenからkey属性を使用して、個別に取得する場合
+TitledPanel.tsxにて
+export default function TitlePanel({children}) {
+  const title = children.find((child) => child.key === 'title');
+  const body = children.find((child) => child.key === 'body');
+
+  return (
+    <div style={{
+      margin: 50,
+      padding: 20,
+      border: '1px solid #000',
+      width: 'fit-content',
+      boxShadow: '10px 5px 5px #999',
+      backgroundColor: '#fff'
+    }}>
+      {title}
+      <hr />
+      {body}
+    </div>
+  )
+}
+
+index.tsxにて
+import TitledPanel from './TitledPanel'
+中略
+root.render(<TitledPanel>
+  <h1 key="title">title</h1>
+  <p key="body">body</p>
+</TitledPanel>
 */
