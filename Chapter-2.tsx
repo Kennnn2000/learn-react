@@ -30,7 +30,7 @@ npm run build
 その配下のファイルをサーバのドキュメントルートに配置することで、アプリを公開できる
 
 npm run test
-テストを実行
+テストを実行 §9参照
 
 npm run eject
 Create React Appを構成するwebpack/Babelの設定をカスタマイズするためのコマンド
