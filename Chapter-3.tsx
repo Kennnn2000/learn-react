@@ -46,7 +46,7 @@ export default function MyHello({name = 'React'}) { //nameのデフォルト値�
 className属性へのスタイル指定をする際、{}式が複雑になる場合はclassnamesライブラリを使用すると便利
 npm install classnamesでインストール可、GitHub: https://github.com/JedWatson/classnames
 
-例えば下記のように元のコードを簡略化できる
+例えば下記のように表す
 // 元のコード
 export default function SelectStyle({mode}) {
   return (
