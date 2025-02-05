@@ -83,4 +83,14 @@ JSXのルールは以下の通り
   例えば、以下のように変数を埋め込むことができる
   const content = `<h3>タイトル</h3> <p>本文</p>`;
   root.render(<p>{content}</p>); // <p><h3>タイトル</h3> <p>本文</p></p>と画面に表示される
+
+
+・{}構文で渡すとき、Style属性の場合のみオブジェクトを渡す
+  通常の{}構文では文字列や数値を渡すが、Style属性の場合はオブジェクトを渡す
+  例えば、以下のようにStyle属性を設定する
+  const style = { color: 'red', fontSize: '20px' };
+  return <div style={style}>スタイルを適用</div>;
+
+・styleの数値の単位はpxがデフォルト
+  ただし、pxで補完される対象は限定されていて、animationLterattionCountなどの数値はpxが補完されない
 */
