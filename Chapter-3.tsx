@@ -39,3 +39,30 @@ export default function MyHello({name = 'React'}) { //nameのデフォルト値�
   return <div>Hello, {name}!</div>
 }
 */
+
+
+// 3-2-3 classnamesライブラリの使用
+/*
+className属性へのスタイル指定をする際、{}式が複雑になる場合はclassnamesライブラリを使用すると便利
+npm install classnamesでインストール可、GitHub: https://github.com/JedWatson/classnames
+
+例えば下記のように元のコードを簡略化できる
+// 元のコード
+export default function SelectStyle({mode}) {
+  return (
+    <div className={`box ${mode === 'light' ? 'light' : 'dark'}`}>
+      <p>class names</p>
+    </div>
+  )
+}
+
+// classnamesを使用する場合
+import classNames from 'classnames'
+export default function SelectStyle({mode}) {
+  return (
+    <div className={classNames('box', mode === 'light' ? 'light' : 'dark')}>
+      <p>class names</p>
+    </div>
+  )
+}
+*/
