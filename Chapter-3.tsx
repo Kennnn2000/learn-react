@@ -128,6 +128,7 @@ root.render(
 ・childrenからkey属性を使用して、個別に取得する
 
 例えば以下のように表す
+
 // Propsを使用し、属性値として渡す場合
 TitledPanel.tsxにて
 export default function TitledPanel({title, children}) {
