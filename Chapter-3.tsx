@@ -74,4 +74,13 @@ export default function SelectStyle({mode}) {
     </div>
   )
 }
+
+// classnamesの使用例3 配列を使用することもできる
+export default function SelectStyle({mode}) {
+  return (
+    <div className={classNames('box', ['panel',{light: mode === 'light', dark: mode === 'dark'}])}>
+      <p>class names</p>
+    </div>
+  )
+}
 */
