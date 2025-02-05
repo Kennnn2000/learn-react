@@ -71,4 +71,9 @@ JSXのルールは以下の通り
   ただし、アプリ側の都合でタグ階層を増やすことにためらいがある場合は、ダミー要素として<React.Fragment>要素を使用することもできる
   <React.Fragment>は、<React.StirctMode>と同様にReactのコンポーネントであり、画面には表示されない
   <React.Fragment>は短縮記法として<></>でも記述できる
+
+・空要素は~/>で終わる
+  例：<input type="text" />
+
+・JSX内ではJavaScriptの変数や式を{}で囲む
 */
