@@ -67,8 +67,8 @@ return
 /*
 JSXのルールは以下の通り
 ・ルート要素は1つである必要がある
-一般的には<div></div>で全体を囲む
-ただし、アプリ側の都合でタグ階層を増やすことにためらいがある場合は、ダミー要素として<React.Fragment>要素を使用することもできる
-<React.Fragment>は、<React.StirctMode>と同様にReactのコンポーネントであり、画面には表示されない
-<React.Fragment>は短縮記法として<></>でも記述できる
+  一般的には<div></div>で全体を囲む
+  ただし、アプリ側の都合でタグ階層を増やすことにためらいがある場合は、ダミー要素として<React.Fragment>要素を使用することもできる
+  <React.Fragment>は、<React.StirctMode>と同様にReactのコンポーネントであり、画面には表示されない
+  <React.Fragment>は短縮記法として<></>でも記述できる
 */
