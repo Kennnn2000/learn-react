@@ -102,7 +102,8 @@ React標準では対応していないため、const [clicked, setClicked] = use
 具体的にはイベントハンドラーの内部でsetClicked(true);を実行する
 
 3. passive
-PassiveモードとしてイベントハンドラーがpreventDefault()を呼び出すかどうかを指定する trueの場合、デフォルトのアクションをキャンセルしない
+PassiveモードとしてイベントハンドラーがpreventDefault()を呼び出すかどうかを指定する
+trueの場合、デフォルトのアクションをキャンセルせず、イベントハンドラからpreventDefault()を呼び出さないことを意味する
 こちらもReact標準では対応していないため、
 
 */
