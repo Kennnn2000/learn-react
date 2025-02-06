@@ -40,3 +40,8 @@ nativeEvent: ブラウザーのネイティブイベント
 bubbles: イベントがバブリングするかどうか
 など Reactのドキュメントも参照：https://ja.react.dev/reference/react-dom/components/common#react-event-object
 */
+
+// 独自のデータ属性を使ったイベントハンドラー
+/*
+
+*/
