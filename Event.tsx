@@ -3,8 +3,8 @@
 
 // onMouseEnter/onMouseLeaveとonMouseOver/onMouseOutの違い
 /*
-onMouseEnterとonMouseOver、onMouseLeaveとonMouseOutは似たようなイベントだが、微妙に違いがある
-それぞれ、要素にマウスポインターが入った時、要素からマウスポインターが出た時に発生するイベント
+onMouseEnterとonMouseOver、onMouseLeaveとonMouseOutはそれぞれ要素にマウスポインターが入った時と出た時に発生するイベントだが、
+挙動に違いがある
 
 onMouseEnter/onMouseLeaveは、イベントが発生した要素にのみ反応する
 つまり、例えば正方形が重なって外側の正方形・内側の正方形がある場合、外側の正方形にマウスが乗った時のみ反応する
