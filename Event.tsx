@@ -104,6 +104,10 @@ React標準では対応していないため、const [clicked, setClicked] = use
 3. passive
 PassiveモードとしてイベントハンドラーがpreventDefault()を呼び出すかどうかを指定する
 trueの場合、デフォルトのアクションをキャンセルせず、イベントハンドラからpreventDefault()を呼び出さないことを意味する
+例えばtouchmoveのようなモバイルデバイスのタッチイベントのイベントハンドラがあり、これがブラウザのデフォルトスクロールアクションを抑制する場合、
+ブラウザはスムーズなスクロールが出来なくなってしまう
+この場合、passive: trueを指定することで、イベントハンドラが事項しているときでもWebページのデフォルトのアクションを抑制しないようにすることができる
+例えばFirefoxとChromeの場合、touchmoveとmousewheelイベントはデフォルトでpassiveになっているので、preventDefault()を呼び出したいときはpassive: falseを指定する
 こちらもReact標準では対応していないため、
 
 */
