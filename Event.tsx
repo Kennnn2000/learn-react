@@ -88,3 +88,21 @@ const handleLink = e => {
   console.log('Link');
 };
 */
+
+
+// イベントハンドラーのオプションの設定
+/*
+JavaScript標準のaddEventListenerメソッドには、第3引数にオプションを設定することができ、オプションには3つのプロパティがある
+1. capture
+キャプチャリングフェーズでイベントハンドラーを呼び出すかどうかを指定する onXxxxCapture属性で指定できる すでに説明済み
+
+2. once
+イベントハンドラーを一度だけ呼び出すかどうかを指定する イベントが一度発生すると、イベントリスナーが削除される
+React標準では対応していないため、const [clicked, setClicked] = useState(false);などで状態を管理する必要がある
+具体的にはイベントハンドラーの内部でsetClicked(true);を実行する
+
+3. passive
+PassiveモードとしてイベントハンドラーがpreventDefault()を呼び出すかどうかを指定する trueの場合、デフォルトのアクションをキャンセルしない
+こちらもReact標準では対応していないため、
+
+*/
