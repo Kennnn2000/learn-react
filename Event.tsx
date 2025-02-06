@@ -116,6 +116,17 @@ passive: trueの場合、preventDefault()を呼ばないとブラウザは判断
 ただし、特定のジェスチャーで画面のスクロールを無効にするなど、スクロールを止めたい場合、passive: falseを指定して、preventDefault()を呼び出す必要がある
 
 例えばFirefoxとChromeの場合、touchmoveとmousewheelイベントはデフォルトでpassiveになっているので、preventDefault()を呼び出したいときはpassive: falseを指定する
-こちらもReact標準では対応していないため、
+こちらもReact標準では対応していないため、別個実装する必要がある
+例えば以下のように設定する
+
+const divRef = useRef(null);
+useEffect(() => {
+  const div = divRef.current;
+  div.addEventListener('wheel',handleWheel, { passive: false });
+  return (() => {
+    // コンポーネント破棄時にイベントリスナーを削除 手動で追加したイベントリスナーは手動で削除する必要がある
+    div.removeEventListener('wheel', handleWheel);
+  };
+});
 
 */
