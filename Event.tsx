@@ -1,6 +1,19 @@
 // Event
 
 
+// イベント
+/*
+イベントとは例えば以下のようなもの
+・ボタンをクリックした、入力値を変更した、マウスを移動したなどのユーザーの操作
+・ページや画像がロードされて、データの読み込みが完了したなど、ブラウザーの処理に伴う特定のタイミング
+
+イベントによって呼び出されるコード（関数）のことをイベントハンドラーと呼ぶ
+イベントハンドラーは必ず関数そのものでなければならないため、current()などをonEvent属性に渡すことはできない
+必ず関数を定義した変数を渡す必要がある
+例 <button onClick={current}>クリック</button>
+*/
+
+
 // onMouseEnter/onMouseLeaveとonMouseOver/onMouseOutの違い
 /*
 onMouseEnterとonMouseOver、onMouseLeaveとonMouseOutはそれぞれ要素にマウスポインターが入った時と出た時に発生するイベントだが、
